@@ -1,6 +1,6 @@
-## These two functions creates a matrix, calculates the inverse of that matrix and caches the result. If the matrix alreday has an inverse cached, these functions also checks for that.
+## These two functions create a matrix, calculates the inverse of that matrix and caches the result. If the matrix alreday has an inverse cached, thecacheSolve function checks the cache if the result exists already.
 
-## makeCacheMatrix create a matrix and caches it
+## makeCacheMatrix - creates a matrix and caches it
 
 makeCacheMatrix <- function(x = matrix(...)) {
         s <- NULL
@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix(...)) {
 }
 
 
-## cacheSolve returns the inverse matrix of matrix x
+## cacheSolve - returns the inverse matrix of matrix x
 
 cacheSolve <- function(x, ...) {
         s <- x$getinverse() ##Searches to check if the inverse is set
